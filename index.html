@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <form>
+            <p>If you need registration</p>
+        </form>>
+        <form action = "/controls/registration-control" method = "POST">
+            First Name: <input type = "text" name="name">
+            Email: <input type = "text" name = "email">
+            Password: <input type = "password" name = "password">
+            <input type = "submit" value = "Submit">
+        </form>>
+        <form>
+                <p>Or if you already registered</p>
+        </form>>
+        <form action="/controls/authenticate-control" method="POST">  
+            Email: <input type="text" name="email">
+            Password: <input type="password" name="password">
+            <input type = "submit" value = "Submit" onclick="loadPage()">
+                <script>
+                    function loadPage()
+                    {
+                      onclick = "window.location.href = '/main.html'"
+                    }
+                </script>
+        </form>
+    </body>
+</html>
